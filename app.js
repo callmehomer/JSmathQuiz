@@ -31,7 +31,7 @@ function guess(id, guess) {
 function showProgress() {
     var currentQuestionNumber = quiz.questionIndex + 1;
     var element = $("#progress");
-    element.innerHTML = "Pytanie " + currentQuestionNumber + " z " + quiz.questions.length;
+    element.html("Pytanie " + currentQuestionNumber + " z " + quiz.questions.length);
 };
 
 function showScores() {

@@ -30,23 +30,7 @@ body {
 
 .welcome-screen__start-button {
   padding: 25 45px;
-  border: 0;
   border-radius: 40px;
-  text-transform: uppercase;
-  font-weight: 700;
-  background: #fff;
-}
-
-.welcome-screen__start-button:focus {
-  outline: none;
-}
-
-.welcome-screen__start-button:active {
-  background: #37905f;
-}
-
-.welcome-screen__start-button:hover {
-  background: #c2c2c2;
 }
 
 .difficulty-screen {
@@ -56,19 +40,16 @@ body {
 
 .difficulty-screen__select-button {
   padding: 10px;
-  border: 0;
-  border-radius: 10px;
   margin: 10px 0;
-  background: #fff;
 }
 
 .quiz {
   display: none;
   flex-direction: column;
+  text-align: center;
 }
 
 .quiz__button {
-  border-radius: 5px;
   border: 0;
   margin: 5px 0;
   padding: 5px 10px;
@@ -81,5 +62,31 @@ body {
   padding: 35px;
   text-align: center;
   border-radius: 15px;
+}
+
+#scoreScreen__back {
+  background: #FFAD19;
+  padding: 12 20px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #fff;
+  transition: all 0.5s;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background: #e79e17;
+}
+
+button:hover {
+  background: #FFAD19;
 }
 /*# sourceMappingURL=styles.css.map */

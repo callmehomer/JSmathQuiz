@@ -7,6 +7,7 @@ var quizScreen = $(".quiz");
 var startBtn = $(".welcome-screen__start-button");
 var navigationBackBtn = $(".navigation__back-btn");
 var basicBtn = $("#difficulty-screen__basic");
+var gameOverBtn = $("#scoreScreen__back");
 
 startBtn.click(
     function(){
@@ -29,5 +30,11 @@ basicBtn.click(
     function(){
         difficultyScreen.hide();
         quizScreen.show().css('display', 'flex');
+    }
+)
+
+gameOverBtn.click(
+    function(){
+        location.reload();
     }
 )
