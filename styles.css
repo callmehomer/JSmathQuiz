@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-image: url(assets/main-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-position: center center;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation__back-btn {
+  border: none;
+  background: none;
+  display: none;
+}
+
+.welcome-screen__start-button {
+  padding: 25 45px;
+  border: 0;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #fff;
+}
+
+.welcome-screen__start-button:focus {
+  outline: none;
+}
+
+.welcome-screen__start-button:active {
+  background: #37905f;
+}
+
+.welcome-screen__start-button:hover {
+  background: #c2c2c2;
+}
+
+.difficulty-screen {
+  display: none;
+  flex-direction: column;
+}
+
+.difficulty-screen__select-button {
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  margin: 10px 0;
+  background: #fff;
+}
+
+.quiz {
+  display: none;
+  flex-direction: column;
+}
+
+.quiz__button {
+  border-radius: 5px;
+  border: 0;
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+
+#scoreScreen {
+  display: none;
+  position: absolute;
+  background: white;
+  padding: 35px;
+  text-align: center;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=styles.css.map */
