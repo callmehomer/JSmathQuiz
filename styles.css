@@ -55,16 +55,16 @@ body {
   padding: 5px 10px;
 }
 
-#scoreScreen {
+.scoreScreen {
   display: none;
   position: absolute;
   background: white;
-  padding: 35px;
+  padding: 65px;
   text-align: center;
   border-radius: 15px;
 }
 
-#scoreScreen__back {
+.scoreScreen__back {
   background: #FFAD19;
   padding: 12 20px;
 }

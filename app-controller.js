@@ -10,7 +10,7 @@ var basicBtn = $("#difficulty-screen__basic");
 var gameOverBtn = $("#scoreScreen__back");
 
 startBtn.click(
-    function(){
+    function () {
         welcomeScren.hide();
         navigationBackBtn.show();
         difficultyScreen.show().css('display', 'flex');
@@ -18,7 +18,7 @@ startBtn.click(
 )
 
 navigationBackBtn.click(
-    function(){
+    function () {
         welcomeScren.show();
         navigationBackBtn.hide();
         difficultyScreen.hide();
@@ -27,14 +27,14 @@ navigationBackBtn.click(
 )
 
 basicBtn.click(
-    function(){
+    function () {
         difficultyScreen.hide();
         quizScreen.show().css('display', 'flex');
     }
 )
 
 gameOverBtn.click(
-    function(){
+    function () {
         location.reload();
     }
 )

@@ -6,22 +6,20 @@ function populate() {
         // show question
         var element = $("#question");
         element.html(quiz.getQuestionIndex().text);
-
         // show options
         var choices = quiz.getQuestionIndex().choices;
         for (var i = 0; i < choices.length; i++) {
-            //set it to jQuery
-            var element = document.getElementById("choice" + i);
-            element.innerHTML = choices[i];
+            var element = $("#choice" + i);
+            element.html(choices[i]);
             guess("btn" + i, choices[i]);
         }
-
         showProgress();
     }
 };
-
+//TODO: chenge to jQuery
 function guess(id, guess) {
     var button = document.getElementById(id);
+
     button.onclick = function() {
         quiz.guess(guess);
         populate();
@@ -40,7 +38,7 @@ function showScores() {
 
     scoreScreen.show();
     score.html(quiz.score);
-}
+};
 
 var questions = [
     new Question("Wynik działania: 2 + 2 = ?", ["3", "8", "2", "4"], "4"),
